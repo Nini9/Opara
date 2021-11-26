@@ -34,7 +34,7 @@ public class BalanceTest {
         Balance instance = new Balance(150.4, "11/9/18");
         double expResult = 150.4;
         double result = instance.getCurrentBalance();
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result);
     }
 
     /**
