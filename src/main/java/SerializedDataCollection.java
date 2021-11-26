@@ -17,7 +17,7 @@ public class SerializedDataCollection {
     }
 
     public void fileChecker() {
-        File tempFile = new File(".\\\\studentsDetails.ser");
+        File tempFile = new File("studentsDetails.ser");
         boolean exists = tempFile.exists();
 
         if (exists == false) {
@@ -39,7 +39,7 @@ public class SerializedDataCollection {
 
     public void deSerialize() {
         try {
-            FileInputStream fis = new FileInputStream(".\\\\studentsDetails.ser");
+            FileInputStream fis = new FileInputStream("studentsDetails.ser");
             ObjectInputStream ois = new ObjectInputStream(fis);
 
             studentArray = (ArrayList<Student>) ois.readObject();
